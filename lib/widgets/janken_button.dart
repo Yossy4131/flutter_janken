@@ -11,8 +11,8 @@ class JankenButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        textStyle: const TextStyle(fontSize: 18),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+        textStyle: const TextStyle(fontSize: 30),
       ),
       child: Text(label),
     );
