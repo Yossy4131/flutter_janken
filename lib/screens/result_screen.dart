@@ -67,14 +67,24 @@ class _ResultScreenState extends State<ResultScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              'あなたの手:',
+              style: TextStyle(fontSize: 20),
+            ),
+            const SizedBox(height: 10),
             Text(
-              'あなたの手: ${widget.playerHand}',
-              style: const TextStyle(fontSize: 20),
+              widget.playerHand,
+              style: const TextStyle(fontSize: 50), // 大きな絵文字
             ),
             const SizedBox(height: 20),
+            const Text(
+              'CPUの手:',
+              style: TextStyle(fontSize: 20),
+            ),
+            const SizedBox(height: 10),
             Text(
-              'CPUの手: ${_finalCpuHand ?? _cpuHand ?? '...'}',
-              style: const TextStyle(fontSize: 20),
+              _finalCpuHand ?? _cpuHand ?? '...',
+              style: const TextStyle(fontSize: 50), // 大きな絵文字
             ),
             const SizedBox(height: 20),
             if (_result != null)
